@@ -1,0 +1,256 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Carrousel Principal */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: 500px;
+    display: block;
+    object-fit: cover;
+}
+
+/* Boutons du carrousel principal */
+.prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 50px;
+    z-index: 1000;
+}
+
+.prev-button:hover, .next-button:hover{
+    color: #00b36e;
+    font-size: 60px;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+/* Liste de Bières et Cocktails */
+section {
+    margin: 20px auto;
+    padding: 20px;
+    width: 100%;
+    background-color: #ebf8ea;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border-style: ridge;
+}
+
+h2 {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Style for the dropdown container */
+.dropdown {
+    position: relative;  /* Allows positioning of the dropdown content */
+    display: inline-block;  /* Aligns dropdown to the content */
+    align-content: center;
+    margin-left: 15px;
+}
+
+/* Style for the dropdown button */
+.dropbtn {
+    background-color: #ff4800;  /* Background color of the button */
+    color: white;                /* Text color */
+    border: none;                /* No border */
+    border-radius: 5px;         /* Rounded corners */
+    padding: 10px 15px;         /* Internal padding */
+    cursor: pointer;             /* Hand cursor */
+    transition: background-color 0.3s; /* Transition effect for hover */
+}
+
+.dropbtn:hover{
+    background-color: #aa3000;
+}
+
+/* Style for the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;               /* Hidden by default */
+    position: absolute;          /* Positioned relative to the dropdown */
+    background-color: #f8f2ec;  /* Background color */
+    min-width: 160px;           /* Minimum width of the dropdown */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Shadow effect */
+    z-index: 1;                 /* Ensure dropdown is above other content */
+}
+
+/* Style for buttons inside the dropdown */
+.filter-button, .reset-button {
+    background-color: transparent; /* Transparent background */
+    color: #023024;                   /* Text color */
+    border: none;                   /* No border */
+    padding: 10px 15px;            /* Padding */
+    text-align: left;              /* Align text to the left */
+    cursor: pointer;                /* Hand cursor */
+    width: 100%;                   /* Full width */
+    border-style: ridge;
+    text-align: center;
+    text-decoration: solid;
+}
+
+.filter-button:hover, .reset-button:hover{
+    color: #000000;
+    size: 100%;
+}
+
+/* Change background color of buttons on hover */
+.filter-button:hover, .reset-button:hover {
+    background-color: #f1f1f1; /* Background color on hover */
+}
+
+/* Show the dropdown content when hovering over the dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;              /* Display dropdown */
+}
+
+/* Show the dropdown content when the button is clicked */
+.dropdown.show .dropdown-content {
+    display: block;              /* Display dropdown */
+}
+
+.section_head{
+    display: flex;
+    align-content: center;
+}
+
+/* Carrousel des articles */
+.carousel-items {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+article {
+    flex: 0 0 20%; /* Affiche 5 articles par vue */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+article img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+article h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+article p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+article button {
+    padding: 8px 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+article button:hover {
+    background-color: #00b36e;
+}
+
+/* Boutons pour faire défiler le carrousel des articles */
+.prev-beer, .next-beer,
+.prev-cocktail, .next-cocktail {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 25px;
+    z-index: 1000;
+}
+
+.prev-beer, .prev-cocktail {
+    left: 10px;
+}
+
+.next-beer, .next-cocktail {
+    right: 10px;
+}
+
+/* Position relative pour les sections des carrousels */
+.beer, .cocktail {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+    z-index: 10;
+  }
+  
+  .left-arrow {
+    left: 10px;
+  }
+  
+  .right-arrow {
+    right: 10px;
+  }
+  
+  section.beer, section.cocktail {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  /* Défilement tactile */
+  section.beer, section.cocktail {
+    touch-action: pan-y;
+  }
+
+ .drink-image{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+ }
+
+ .image-caroussel{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+ }
