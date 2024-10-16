@@ -1,13 +1,13 @@
 import React from "react";
 import { Container, Grid2, Box, Paper, Typography } from "@mui/material";
 
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls, useGLTF } from '@react-three/drei';
+// import { Canvas } from '@react-three/fiber';
+// import { OrbitControls, useGLTF } from '@react-three/drei';
 
 
 export default function DetailDrinkPage() {
 
-    const { scene } = useGLTF('src/assets/buds.glb');
+    // const { scene } = useGLTF('src/assets/buds.glb');
 
     return (
         <Box sx={{ background: "linear-gradient(191deg, rgba(255,255,255,0.733566668855042) 33%, rgba(255,0,0,0.29098963804271705) 100%)" }}>
@@ -16,17 +16,15 @@ export default function DetailDrinkPage() {
                     <Grid2 size={{ xs: 12, md: 6 }}>
                         <Paper elevation={8} sx={{ width: '100%', height: '100%' }}>
 
-                            <Canvas style={{ width: '100%', height: '100%' }}>
+                            {/* <Canvas style={{ width: '100%', height: '100%' }}>
                                 <ambientLight intensity={0.5} />
                                 <directionalLight position={[5, 5, 5]} />
-                                {/* Affiche la scène du modèle 3D */}
 
                                 <gridHelper position={[0, -3, 0]} args={[10, 10]} />
 
                                 <primitive object={scene} scale={3} />
-                                {/* Contrôles pour manipuler le modèle */}
                                 <OrbitControls enableZoom={true} />
-                            </Canvas>
+                            </Canvas> */}
 
                         </Paper>
                     </Grid2>
