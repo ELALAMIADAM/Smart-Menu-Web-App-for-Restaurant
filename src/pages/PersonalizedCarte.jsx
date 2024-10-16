@@ -46,7 +46,6 @@ export default function PersonalizedCarte() {
     { image: PinaColada, title: "Custom Pina Colada", price: "15$" },
     { image: CoronaImage, title: "Special Corona", price: "12$" },
     { image: heinekenImage, title: "Heineken", price: "9$" },
-    { image: VodkaImage, title: "Vodka Mix", price: "16$" },
     { image: Carlsberg, title: "Unique Carlsberg", price: "13$" },
   ];
 
