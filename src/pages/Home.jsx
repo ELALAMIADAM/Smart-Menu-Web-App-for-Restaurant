@@ -26,7 +26,7 @@ export default function Home() {
                     backgroundSize: "cover", // Couvre toute la zone de la div
                     backgroundPosition: "center", // Centre l'image
                     borderRadius: "10px", // Arrondi les coins de la div
-                    padding: "50px", // Ajoute du padding autour du contenu
+                    // padding: "50px", // Ajoute du padding autour du contenu
                     color: "white", // Change la couleur du texte si besoin pour le contraste
 
                 }}
