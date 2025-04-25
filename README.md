@@ -24,7 +24,10 @@ Collaborated with a team using GitLab for version control and code review, with 
 
 
 The following documents describe the work on The UX research and UI Design :
+
 CAI - Restauration Groupe 04-1.pdf
+
 Dossier de développement
+
 Présentation Oral
 
