@@ -23,27 +23,6 @@ Team Collaboration:
 Collaborated with a team using GitLab for version control and code review, with a designated tech lead overseeing code quality and merge requests.
 
 
-Tech Stack
-
-Frontend:
-
-React.js
-
-Material UI
-
-Vite
-
-React Router
-
-WebGL (THREE.js)
-
-
-Version Control:
-
-GitLab
-
-
-Design & Prototyping:
-
-Figma
+The following documents describe the work on The UX research and UI Design :
+[CAI - Restauration Groupe 04-1.pdf](./"CAI - Restauration Groupe 04-1.pdf")
 
