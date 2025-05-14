@@ -6,5 +6,5 @@ export default defineConfig({
   server: {
     // Ensure the server is correctly configured
   },
-  base: '/', // Adjust this if deploying to GitHub Pages
+  base: '/Smart-Menu-Web-App-for-Restaurant/',
 });
